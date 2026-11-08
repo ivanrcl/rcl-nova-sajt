@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integracije ERP sistema — RCL Nova</title>
+  <meta name="description" content="Integracija Business Central ERP-a sa platama, HRM, e-bankarstvom, CRM-om, maloprodajom, web prodavnicom i POS terminalima. API, web servisi, razmena datoteka.">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="RCL Nova — početna"><img src="assets/img/logo.png" alt="RCL group" width="73" height="36"><span>RCL Nova d.o.o.<br>Beograd</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Meni</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="erp.html">ERP rešenje</a></li>
+      <li><a href="warehouse.html">Warehouse rešenje</a></li>
+      <li><a href="integracije.html" class="active" aria-current="page">Integracije</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
+      <li><a class="btn" href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Početna</a> / Integracije</div>
+      <span class="label">Integracije</span>
+      <h1>Povežite ERP sa svim sistemima koje već koristite.</h1>
+      <p class="lead">Podaci teku automatski između ERP-a, banke, maloprodaje, web prodavnice i magacina. Bez ručnog prepisivanja, bez Excel tabela između sistema.</p>
+      <div class="actions">
+        <a class="btn" href="kontakt.html?interes=Integracije">Razgovarajmo o integraciji <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#katalog">Katalog integracija</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="container">
+      <div class="head">
+        <span class="label">Arhitektura</span>
+        <h2>ERP u centru, sve ostalo povezano</h2>
+        <p>Business Central je jedinstveni izvor podataka, a ostali sistemi razmenjuju podatke sa njim preko standardnih interfejsa.</p>
+      </div>
+      <svg class="diagram" viewBox="0 0 900 430" role="img" aria-label="Dijagram: ERP Business Central u centru, povezan sa platama, e-bankarstvom, e-dokumentima, CRM-om, maloprodajom, web prodavnicom, magacinskim uređajima i sistemima cDOCS i cBI">
+        <path id="l1" class="ln" d="M230,80 C290,80 280,222 340,222"/>
+        <path id="l2" class="ln" d="M230,175 C290,175 280,222 340,222"/>
+        <path id="l3" class="ln" d="M230,270 C290,270 280,222 340,222"/>
+        <path id="l4" class="ln" d="M230,365 C290,365 280,222 340,222"/>
+        <path id="r1" class="ln" d="M670,80 C610,80 620,222 560,222"/>
+        <path id="r2" class="ln" d="M670,175 C610,175 620,222 560,222"/>
+        <path id="r3" class="ln" d="M670,270 C610,270 620,222 560,222"/>
+        <path id="r4" class="ln" d="M670,365 C610,365 620,222 560,222"/>
+        <g class="node"><rect x="30" y="52" width="200" height="56" rx="10"/><text x="48" y="77">Plate i HRM</text><text class="sub" x="48" y="95">obračun · kadrovi</text></g>
+        <g class="node"><rect x="30" y="147" width="200" height="56" rx="10"/><text x="48" y="172">E-bankarstvo</text><text class="sub" x="48" y="190">izvodi · nalozi</text></g>
+        <g class="node"><rect x="30" y="242" width="200" height="56" rx="10"/><text x="48" y="267">E-dokumenti</text><text class="sub" x="48" y="285">e-razmena · fiskalizacija</text></g>
+        <g class="node"><rect x="30" y="337" width="200" height="56" rx="10"/><text x="48" y="362">CRM</text><text class="sub" x="48" y="380">kupci · prilike</text></g>
+        <g class="node"><rect x="670" y="52" width="200" height="56" rx="10"/><text x="688" y="77">Maloprodaja i POS</text><text class="sub" x="688" y="95">LS Central · cBBIS</text></g>
+        <g class="node"><rect x="670" y="147" width="200" height="56" rx="10"/><text x="688" y="172">Web prodavnica</text><text class="sub" x="688" y="190">porudžbine · zalihe</text></g>
+        <g class="node"><rect x="670" y="242" width="200" height="56" rx="10"/><text x="688" y="267">Magacinski uređaji</text><text class="sub" x="688" y="285">čitači · tableti · vage</text></g>
+        <g class="node"><rect x="670" y="337" width="200" height="56" rx="10"/><text x="688" y="362">cDOCS · cBI</text><text class="sub" x="688" y="380">dokumenti · izveštaji</text></g>
+        <g class="core"><rect x="340" y="182" width="220" height="80" rx="14"/><text x="450" y="218" text-anchor="middle">ERP</text><text class="sub" x="450" y="240" text-anchor="middle">Dynamics 365 Business Central</text></g>
+        <circle class="pulse" r="3"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#l2"/></animateMotion></circle>
+        <circle class="pulse" r="3"><animateMotion dur="3.8s" begin="-1s" repeatCount="indefinite"><mpath href="#l4"/></animateMotion></circle>
+        <circle class="pulse" r="3"><animateMotion dur="3.4s" begin="-.5s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#r1"/></animateMotion></circle>
+        <circle class="pulse" r="3"><animateMotion dur="4s" begin="-1.5s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#r3"/></animateMotion></circle>
+      </svg>
+      <ul class="diagram-list">
+        <li class="core">ERP <span>Dynamics 365 BC</span></li>
+        <li>Plate i HRM <span>obračun · kadrovi</span></li>
+        <li>E-bankarstvo <span>izvodi · nalozi</span></li>
+        <li>E-dokumenti <span>e-razmena · fiskalizacija</span></li>
+        <li>CRM <span>kupci · prilike</span></li>
+        <li>Maloprodaja i POS <span>LS Central · cBBIS</span></li>
+        <li>Web prodavnica <span>porudžbine · zalihe</span></li>
+        <li>Magacinski uređaji <span>čitači · tableti</span></li>
+        <li>cDOCS · cBI <span>dokumenti · izveštaji</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="katalog">
+    <div class="container">
+      <div class="head">
+        <span class="label">Katalog</span>
+        <h2>Najčešće integracije</h2>
+        <p>Ako sistem koji koristite nije na listi, verovatno smo ga već povezivali. Pitajte nas.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Sistem</th><th>Šta se razmenjuje</th><th>Smer</th></tr></thead>
+          <tbody>
+            <tr><td>Plate i HRM</td><td class="muted">Zaposleni, obračun zarada, knjiženje troškova zarada</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>E-bankarstvo</td><td class="muted">Izvodi, nalozi za plaćanje, automatsko zatvaranje stavki</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>E-dokumenti</td><td class="muted">Elektronska razmena dokumenata sa partnerima, fiskalizacija</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>CRM</td><td class="muted">Kupci, kontakti, ponude i prodajne prilike</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>LS Central / cBBIS</td><td class="muted">Artikli, cene, akcije, prodaja po kasama, zalihe prodavnica</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>Web prodavnica</td><td class="muted">Porudžbine, stanje zaliha, cene, „Click and collect“</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>POS terminali i plaćanja</td><td class="muted">Kartice, vaučeri, uplatnice, Western Union, Paysafe, PayPal, Eventim</td><td><span class="badge">↔ dvosmerno</span></td></tr>
+            <tr><td>Magacinski uređaji</td><td class="muted">Barkod čitači, tableti, vage, štampači etiketa</td><td><span class="badge">→ u ERP</span></td></tr>
+            <tr><td>cDOCS</td><td class="muted">Digitalizovani ulazni dokumenti, likvidatura</td><td><span class="badge">→ u ERP</span></td></tr>
+            <tr><td>cBI</td><td class="muted">Podaci za izveštavanje i poslovno odlučivanje</td><td><span class="badge">← iz ERP-a</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container split">
+      <div>
+        <span class="label">Tehnički pristup</span>
+        <h2>Integracija po meri, a ne „na silu“</h2>
+        <p class="muted">Imamo sopstveno razvojno odeljenje i biramo način povezivanja koji odgovara vašem slučaju, obimu podataka i infrastrukturi.</p>
+        <ul class="checks-list">
+          <li>API i web servisi platforme Business Central</li>
+          <li>Razmena datoteka (XML, CSV, Excel) i zakazani prenosi</li>
+          <li>Proširenja (extensions) za Business Central</li>
+          <li>Povezivanje sa postojećim samostalnim ili mrežnim sistemima</li>
+          <li>Održavanje i nadogradnja integracija na jednom mestu</li>
+        </ul>
+      </div>
+      <div class="code">
+        <div class="code-bar"><span class="dots"><i></i><i></i><i></i></span><span class="file">webshop → erp · nova-porudzbina.http</span></div>
+<pre><span class="c"># Porudžbina iz web prodavnice ulazi direktno u ERP</span>
+<span class="k">POST</span> /api/v2.0/companies(<span class="n">{companyId}</span>)/salesOrders
+<span class="k">Content-Type</span>: application/json
+
+{
+  <span class="s">"customerNumber"</span>: <span class="s">"K-00418"</span>,
+  <span class="s">"externalDocumentNumber"</span>: <span class="s">"WEB-2026-10482"</span>,
+  <span class="s">"salesOrderLines"</span>: [
+    { <span class="s">"lineObjectNumber"</span>: <span class="s">"ART-11930"</span>, <span class="s">"quantity"</span>: <span class="n">24</span> }
+  ]
+}
+
+<span class="c"># 201 Created → rezervacija zaliha, otprema, faktura</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <div><h2>Imate sistem koji treba povezati?</h2><p>Opišite nam šta koristite, a mi ćemo predložiti najbolji način integracije.</p></div>
+        <div class="actions"><a class="btn light" href="kontakt.html?interes=Integracije">Pošaljite upit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo.png" alt="RCL group" width="69" height="34">
+        <p>Poslovni informacioni sistemi za sve vrste poslovanja. Član RCL grupacije, sa više od 30 godina iskustva u razvoju i implementaciji.</p>
+      </div>
+      <div>
+        <h4>Rešenja</h4>
+        <ul>
+          <li><a href="erp.html">ERP: Dynamics 365 BC</a></li>
+          <li><a href="warehouse.html">Warehouse rešenje</a></li>
+          <li><a href="integracije.html">Integracije</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kompanija</h4>
+        <ul>
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="https://support-rcl.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Portal za podršku ↗</a></li>
+          <li><a href="https://www.linkedin.com/company/rcl-int-d-o-o-/about/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>RCL Nova d.o.o.</h4>
+        <ul>
+          <li>Pivljanina Baja 75a<br>11000 Beograd, Srbija</li>
+          <li><a href="tel:+381114024205">+381 11 402 4205</a></li>
+          <li><a href="mailto:info@rcl-group.com">info@rcl-group.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> RCL Nova d.o.o. Sva prava zadržana.</span>
+      <span>SRB · SLO · HR · MK</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

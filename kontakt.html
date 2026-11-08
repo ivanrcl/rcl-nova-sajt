@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt — RCL Nova d.o.o.</title>
+  <meta name="description" content="Kontaktirajte RCL Nova d.o.o., Pivljanina Baja 75a, Beograd. Zakažite demo ERP-a, warehouse rešenja ili razgovor o integracijama.">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="RCL Nova — početna"><img src="assets/img/logo.png" alt="RCL group" width="73" height="36"><span>RCL Nova d.o.o.<br>Beograd</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Meni</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="erp.html">ERP rešenje</a></li>
+      <li><a href="warehouse.html">Warehouse rešenje</a></li>
+      <li><a href="integracije.html">Integracije</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
+      <li><a class="btn" href="kontakt.html" aria-current="page">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero page-hero" style="padding-bottom:40px">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Početna</a> / Kontakt</div>
+      <span class="label">Kontakt</span>
+      <h1>Razgovarajmo o vašem poslovanju.</h1>
+      <p class="lead">Opišite nam šta vam je potrebno, a mi ćemo se javiti sa predlogom rešenja ili terminom za demo.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:56px">
+    <div class="container contact-grid">
+      <aside>
+        <h2 style="font-size:1.4rem">Šta se dešava posle slanja</h2>
+        <ol class="next-steps" style="margin-top:24px">
+          <li><strong>Javljamo se</strong><span>Konsultant vas kontaktira da razjasni potrebe i obim.</span></li>
+          <li><strong>Demo ili sastanak</strong><span>Prikaz rešenja na primerima iz vaše delatnosti.</span></li>
+          <li><strong>Predlog</strong><span>Konkretna ponuda: moduli, licence, integracije i plan uvođenja.</span></li>
+        </ol>
+
+        <dl class="contact-list">
+          <div><dt>Kompanija</dt><dd>RCL Nova d.o.o.</dd></div>
+          <div><dt>Adresa</dt><dd>Pivljanina Baja 75a<br>11000 Beograd, Srbija</dd></div>
+          <div><dt>Telefon</dt><dd><a href="tel:+381114024205">+381 11 402 4205</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@rcl-group.com">info@rcl-group.com</a></dd></div>
+          <div><dt>Podrška</dt><dd><a href="https://support-rcl.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Portal za prijavu zahteva ↗</a><br><span class="muted" style="font-size:.9rem">Za postojeće korisnike</span></dd></div>
+        </dl>
+      </aside>
+
+      <form id="lead-form" class="lead-form" novalidate>
+        <h2>Pošaljite upit</h2>
+        <p>Polja označena <span class="req">*</span> su obavezna.</p>
+        <div class="form-row">
+          <div class="field">
+            <label for="ime">Ime i prezime <span class="req">*</span></label>
+            <input id="ime" name="Ime i prezime" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="kompanija">Kompanija <span class="req">*</span></label>
+            <input id="kompanija" name="Kompanija" type="text" autocomplete="organization" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Poslovni email <span class="req">*</span></label>
+            <input id="email" name="Email" type="email" autocomplete="email" placeholder="ime@kompanija.rs" required>
+          </div>
+          <div class="field">
+            <label for="telefon">Telefon <span class="req">*</span></label>
+            <input id="telefon" name="Telefon" type="tel" autocomplete="tel" placeholder="+381" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="pozicija">Pozicija</label>
+            <input id="pozicija" name="Pozicija" type="text" autocomplete="organization-title" placeholder="npr. CFO, IT menadžer">
+          </div>
+          <div class="field">
+            <label for="velicina">Broj zaposlenih</label>
+            <select id="velicina" name="Broj zaposlenih">
+              <option value="">Izaberite…</option>
+              <option>1–10</option>
+              <option>11–50</option>
+              <option>51–250</option>
+              <option>251–1000</option>
+              <option>Više od 1000</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Šta vas zanima</label>
+          <div class="checks">
+            <label><input type="checkbox" name="Oblast interesovanja" value="ERP"> ERP</label>
+            <label><input type="checkbox" name="Oblast interesovanja" value="Warehouse"> Warehouse</label>
+            <label><input type="checkbox" name="Oblast interesovanja" value="Integracije"> Integracije</label>
+            <label><input type="checkbox" name="Oblast interesovanja" value="Maloprodaja"> Maloprodaja / POS</label>
+            <label><input type="checkbox" name="Oblast interesovanja" value="Drugo"> Drugo</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="poruka">Poruka <span class="req">*</span></label>
+          <textarea id="poruka" name="Poruka" placeholder="Ukratko opišite delatnost, sistem koji trenutno koristite i šta želite da unapredite." required></textarea>
+        </div>
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field consent">
+          <input id="saglasnost" type="checkbox" name="Saglasnost" value="Da" required>
+          <label for="saglasnost">Saglasan/na sam da RCL Nova d.o.o. koristi moje podatke isključivo radi odgovora na ovaj upit. <span class="req">*</span></label>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn">Potvrdi i pošalji</button>
+          <small>Podatke ne delimo sa trećim licima.</small>
+        </div>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo.png" alt="RCL group" width="69" height="34">
+        <p>Poslovni informacioni sistemi za sve vrste poslovanja. Član RCL grupacije, sa više od 30 godina iskustva u razvoju i implementaciji.</p>
+      </div>
+      <div>
+        <h4>Rešenja</h4>
+        <ul>
+          <li><a href="erp.html">ERP: Dynamics 365 BC</a></li>
+          <li><a href="warehouse.html">Warehouse rešenje</a></li>
+          <li><a href="integracije.html">Integracije</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kompanija</h4>
+        <ul>
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="https://support-rcl.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Portal za podršku ↗</a></li>
+          <li><a href="https://www.linkedin.com/company/rcl-int-d-o-o-/about/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>RCL Nova d.o.o.</h4>
+        <ul>
+          <li>Pivljanina Baja 75a<br>11000 Beograd, Srbija</li>
+          <li><a href="tel:+381114024205">+381 11 402 4205</a></li>
+          <li><a href="mailto:info@rcl-group.com">info@rcl-group.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> RCL Nova d.o.o. Sva prava zadržana.</span>
+      <span>SRB · SLO · HR · MK</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

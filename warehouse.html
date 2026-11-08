@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warehouse rešenje — upravljanje magacinom | RCL Nova</title>
+  <meta name="description" content="Upravljanje magacinom i zalihama u realnom vremenu: prijem, lokacije, komisioniranje, otprema, inventura, barkod čitači i min-max optimizacija.">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="RCL Nova — početna"><img src="assets/img/logo.png" alt="RCL group" width="73" height="36"><span>RCL Nova d.o.o.<br>Beograd</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Meni</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="erp.html">ERP rešenje</a></li>
+      <li><a href="warehouse.html" class="active" aria-current="page">Warehouse rešenje</a></li>
+      <li><a href="integracije.html">Integracije</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
+      <li><a class="btn" href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="crumbs"><a href="index.html">Početna</a> / Warehouse rešenje</div>
+        <span class="label">Warehouse management</span>
+        <h1>Tačne zalihe. Brži magacin. Manje grešaka.</h1>
+        <p class="lead">Ceo tok robe od prijema do otpreme vodite u jednom sistemu, uz mobilnu aplikaciju WarehouseMobile direktno na lokaciji. Sve je povezano sa ERP-om, bez dvostrukog unosa.</p>
+        <div class="actions">
+          <a class="btn" href="kontakt.html?interes=Warehouse">Zatražite ponudu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn ghost" href="#mobilna-aplikacija">Mobilna aplikacija</a>
+        </div>
+        <div class="hero-meta"><span>Mobilna aplikacija WarehouseMobile</span><span>Barkod, kamera ili ručni unos</span><span>Offline režim</span></div>
+      </div>
+      <div class="hero-phone">
+        <div class="phone"><div class="screen wm-login" role="img" aria-label="Ekran za prijavu u aplikaciju WarehouseMobile">
+          <div class="sb"><span>08:00</span><span>●●● ▮</span></div>
+          <div class="wm-login-body">
+            <img src="assets/img/logo.png" alt="">
+            <div class="wm-field filled">magacioner01</div>
+            <div class="wm-field filled">••••••••<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <div class="wm-login-btn">PRIJAVA</div>
+            <div class="wm-gear"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          </div>
+        </div></div>
+        <div class="float-card fc2">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <div><b>Isti nalog kao u cBBIS-u</b><span>bez posebne registracije</span></div>
+        </div>
+        <div class="float-card fc1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2M3 12a9 9 0 0 1 15.5-6.2M21 4v5h-5M3 20v-5h5"/></svg></div>
+          <div><b>Radi i offline</b><span>sinhronizacija pre rada</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="proces">
+    <div class="container">
+      <div class="head">
+        <span class="label">Proces</span>
+        <h2>Ceo tok robe pod kontrolom</h2>
+        <p>Svaki korak se evidentira u trenutku kada se desi, pa su stanje i lokacija svakog artikla uvek poznati.</p>
+      </div>
+      <div class="flow">
+        <div><small>01</small><h3>Prijem</h3><p>Prijem po narudžbenici, kontrola količine i kvaliteta, knjiženje na zalihe.</p></div>
+        <div><small>02</small><h3>Skladištenje</h3><p>Raspoređivanje po magacinima, zonama i lokacijama.</p></div>
+        <div><small>03</small><h3>Komisioniranje</h3><p>Liste za izdvajanje i priprema porudžbina skeniranjem.</p></div>
+        <div><small>04</small><h3>Otprema</h3><p>Pakovanje, otpremnice i optimizacija isporuke i dostave.</p></div>
+        <div><small>05</small><h3>Inventura</h3><p>Popis i ciklična inventura, uz usklađivanje stanja u ERP-u.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="mobilna-aplikacija">
+    <div class="container">
+      <div class="head">
+        <span class="label">WarehouseMobile · Android · .NET MAUI</span>
+        <h2>Ceo magacin u ruci magacionera</h2>
+        <p>WarehouseMobile je naša mobilna aplikacija za rad u skladištu, direktno povezana sa cBBIS sistemom. Magacioner se prijavljuje istim kredencijalima kao u cBBIS-u i odmah vidi šta ga čeka u njegovoj poslovnici.</p>
+      </div>
+
+      <div class="phones">
+        <figure class="phone-col">
+          <div class="phone"><div class="screen">
+            <div class="sb"><span>08:42</span><span>●●● ▮</span></div>
+            <div class="wm-top"><span class="hamb"></span>
+              <span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2M3 12a9 9 0 0 1 15.5-6.2M21 4v5h-5M3 20v-5h5"/></svg></span>
+              <span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            </div>
+            <div class="wm-body">
+              <div class="wm-branch"><b>100000 · CENTRALNI MAGACIN</b><small>POSLOVNICA</small></div>
+              <div class="wm-tiles">
+                <div><b>6</b><i class="up">↑</i><span>Dokumenata za prijem</span></div>
+                <div><b>3</b><i class="dn">↓</i><span>Dokumenata za izlaz</span></div>
+                <div><b>1</b><i class="up">↑</i><span>Nedovršenih dokumenata</span></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="wm-nav"><div class="on">INFO</div><div>Vezni dok.</div><div>Opšti dok.</div><div>Provera</div><div>Popis</div></div>
+          </div></div>
+          <figcaption><b>Pregled poslovnice</b><span>Otvoreni prijemi, izdavanja i nedovršeni dokumenti na prvom ekranu.</span></figcaption>
+        </figure>
+
+        <figure class="phone-col">
+          <div class="phone"><div class="screen">
+            <div class="sb"><span>09:15</span><span>●●● ▮</span></div>
+            <div class="wm-top"><span class="hamb"></span>
+              <span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span>
+              <span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            </div>
+            <div class="wm-body">
+              <div class="wm-doc"><div><b>PR-2026-0418</b><small>BROJ DOKUMENTA</small></div><div><b>12.11.2026</b><small>DATUM DOKUMENTA</small></div></div>
+              <div class="wm-scan"><span>3870000012345▏</span><span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></span></div>
+              <div class="wm-swipe"><span>Edit</span>
+                <div class="wm-item"><span class="t">1. Paleta EUR 1200×800</span><span>Količina 24</span><span class="ean">3870000011935</span><span>Razlika</span><span>Skenirano:</span></div>
+              </div>
+              <div class="wm-item done"><span class="t">2. Kutija transportna 40×30</span><span>Količina 12</span><span class="ean">3870000012345</span><span>Razlika <span class="diff">-2.000</span></span><span>Skenirano: 10.000</span></div>
+              <div class="wm-item done"><span class="t">3. Folija stretch 500 mm</span><span>Količina 6</span><span class="ean">3870000010421</span><span>Razlika <span class="ok">0.000</span></span><span>Skenirano: 6.000</span></div>
+              <div class="wm-item"><span class="t">4. Traka za pakovanje 48 mm</span><span>Količina 40</span><span class="ean">3870000030215</span><span>Razlika</span><span>Skenirano:</span></div>
+            </div>
+          </div></div>
+          <figcaption><b>Skeniranje stavki</b><span>Barkod čitač, kamera ili ručni unos. Razlika u količini je odmah vidljiva, a ispravka je jedan pokret prstom.</span></figcaption>
+        </figure>
+
+        <figure class="phone-col">
+          <div class="phone"><div class="screen">
+            <div class="sb"><span>10:03</span><span>●●● ▮</span></div>
+            <div class="wm-top"><span class="hamb"></span>
+              <span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            </div>
+            <div class="wm-body">
+              <div class="wm-scan"><span>3870000011935</span><span class="wm-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></span></div>
+              <div class="wm-tabs"><span class="on">Osnovni</span><span>Akcije</span><span>Atributi</span><span>Dodatno</span></div>
+              <div class="wm-card">
+                <h6>PALETA EUR 1200×800</h6>
+                <div><b>Šifra proizvoda:</b> 11930</div>
+                <div><b>EAN:</b> 3870000011935</div>
+                <div><b>Dugi opis:</b> Paleta EUR drvena</div>
+                <div><b>Kratki opis:</b> EPAL 1200×800 mm</div>
+                <div><b>Zalihe:</b> 220.000</div>
+                <div><b>Merna jedinica:</b> Komad</div>
+                <div><b>Broj pakovanja:</b> 1.0000</div>
+                <span class="wm-cta">Zalihe u drugim prodavnicama</span>
+              </div>
+            </div>
+            <div class="wm-nav"><div>INFO</div><div>Vezni dok.</div><div>Opšti dok.</div><div class="on">Provera</div><div>Popis</div></div>
+          </div></div>
+          <figcaption><b>Provera artikla</b><span>Skenirajte EAN i odmah vidite zalihe, akcije, atribute i stanje u ostalim poslovnicama.</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="wm-steps" aria-label="Tok rada u aplikaciji">
+        <span>Prijava</span><i>→</i><span>Izbor poslovnice</span><i>→</i><span>Dokument iz cBBIS-a</span><i>→</i><span>Skeniranje</span><i>→</i><span>Potvrda</span><i>→</i><span>Slanje u cBBIS</span>
+      </div>
+
+      <div class="download" id="preuzimanje">
+        <div class="app-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 8v8M11 8v8M15 8v8M18 8v8"/></svg></div>
+        <div>
+          <h3>WarehouseMobile za Android</h3>
+          <div class="versions">
+            <span>Aplikacija <b data-wm="app">1.7.33</b></span>
+            <span>Web servis <b data-wm="service">3.26</b></span>
+            <span>.NET MAUI</span>
+          </div>
+          <p>Aplikacija i web servis izlaze zajedno, pa uz novu verziju aplikacije uvek dolazi i odgovarajuća verzija servisa. Za prijavu je potreban korisnički nalog u cBBIS-u.</p>
+        </div>
+        <div class="download-actions">
+          <a class="btn apk" href="#preuzimanje" data-wm-apk aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Preuzmi .apk</a>
+          <small>Android · <span data-wm="app">1.7.33</span></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <span class="label">Mogućnosti aplikacije</span>
+        <h2>Šta magacioner može u WarehouseMobile</h2>
+      </div>
+      <div class="feature-list">
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><div><h3>Vezni dokumenti</h3><p>Prijem, prodaja i interni prenos: dokumenti kreirani u cBBIS-u, sa pretragom po broju dokumenta ili komitentu.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 8v8M11 8v8M15 8v8M18 8v8"/></svg></span><div><h3>Tri načina unosa</h3><p>Barkod čitač, kamera telefona ili ručni unos, uz opciju brzog unosa za veće količine.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><div><h3>Kontrola količina</h3><p>Skenirane stavke su jasno označene, sa indikatorom razlike. Prevlačenjem udesno ispravljate količinu, a ulevo poništavate unos. Veća količina od naručene prolazi samo ako je dozvoljena.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15h6"/></svg></span><div><h3>Opšti dokumenti</h3><p>Kreiranje novih dokumenata direktno na terenu, uz brz izbor komitenta pretragom.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span><div><h3>Popis</h3><p>Inventura skeniranjem, sa istim tokom unosa i potvrde kao kod ostalih dokumenata.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span><div><h3>Provera artikla</h3><p>Podaci o artiklu, akcije i atributi preko EAN koda ili šifre, kao i raspoložive zalihe u drugim poslovnicama.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.58 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></span><div><h3>Offline režim</h3><p>Rad i bez internet konekcije, uz sinhronizaciju podataka pre početka rada.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></span><div><h3>Potvrda i slanje</h3><p>Potvrđeni dokumenti šalju se u bazu jednim dodirom i ostaju vidljivi dok se ne zatvore u cBBIS-u.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section">
+    <div class="container split">
+      <div>
+        <span class="label">Za IT administratore</span>
+        <h2>Podešavanje i kontrola na jednom mestu</h2>
+        <p>Aplikacija se pri prvom pokretanju povezuje na vaš web servis i odmah je spremna za rad. Pristup je ograničen na poslovnice za koje korisnik ima prava. Ako ima samo jednu, aplikacija u nju ulazi automatski.</p>
+      </div>
+      <dl class="spec">
+        <dt>Tehnologija</dt><dd>.NET MAUI (Microsoft): nativna aplikacija, ne web stranica u omotaču</dd>
+        <dt>Platforma</dt><dd>Android uređaji, uz podršku za barkod čitače i kameru</dd>
+        <dt>Verzije</dt><dd>Aplikacija <span data-wm="app">1.7.33</span> · web servis <span data-wm="service">3.26</span>. Izdaju se zajedno i prate jedna drugu.</dd>
+        <dt>Povezivanje</dt><dd>Web servis cBBIS sistema</dd>
+        <dt>Prijava</dt><dd>Isti korisnički nalozi kao u cBBIS-u</dd>
+        <dt>Prava</dt><dd>Rad samo u dodeljenim poslovnicama</dd>
+        <dt>Logovanje</dt><dd>Nivoi Debug, Warning, Error, uz opciono slanje logova u centralnu bazu</dd>
+        <dt>Pravila</dt><dd>Dodatni artikli na dokumentu (Da, Ne, Uvek pitaj) i unos nepoznatih artikala</dd>
+        <dt>Rad bez mreže</dt><dd>Offline režim sa sinhronizacijom</dd>
+        <dt>Jezik</dt><dd>Izbor jezika u podešavanjima</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="head">
+        <span class="label">Funkcionalnosti</span>
+        <h2>Alati za svakodnevni rad magacina</h2>
+      </div>
+      <div class="feature-list">
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 5v14M7 5v14M11 5v14M15 5v14M19 5v14M21 5v14"/></svg></span><div><h3>Čitači i tableti</h3><p>Rad sa ručnim barkod čitačima i tabletima direktno u magacinu: manje papira, manje grešaka.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span><div><h3>Više magacina i lokacija</h3><p>Magacini, zone i pozicije, međuskladišni prenosi i jasna slika gde je svaki artikal.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span><div><h3>Min-Max optimizacija</h3><p>Automatski predlozi narudžbi na osnovu minimalnih, maksimalnih i signalnih zaliha.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><h3>Zalihe u realnom vremenu</h3><p>„Online“ upravljanje zalihama i trenutne informacije o prodaji i stanju.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><div><h3>Isporuka i dostava</h3><p>Optimizacija isporuke, „Click and collect“ i integracija sa web prodavnicom.</p></div></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span><div><h3>Izveštaji i analize</h3><p>Statistike kretanja robe i izvoz u Excel i PDF.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <span class="label">Za koga</span>
+        <h2>Napravljeno za magacine koji ne smeju da stanu</h2>
+        <p class="muted">Rešenje se oslanja na iskustvo RCL grupacije sa nekim od najvećih trgovinskih lanaca u regionu.</p>
+        <ul class="checks-list">
+          <li>Veleprodaja i distribucija</li>
+          <li>Maloprodajni lanci sa centralnim magacinom</li>
+          <li>Proizvodna preduzeća: sirovine i gotovi proizvodi</li>
+          <li>Rezervni delovi i auto industrija</li>
+        </ul>
+      </div>
+      <div class="tile dark">
+        <div class="tag-mono">Integracija</div>
+        <h3>Povezano sa vašim ERP-om</h3>
+        <p>Magacin radi nad istim podacima kao finansije i prodaja. Prijem odmah ažurira zalihe, a otprema fakturisanje.</p>
+        <div class="chips"><span class="chip">Dynamics 365 BC</span><span class="chip">cBBIS</span><span class="chip">WarehouseMobile</span><span class="chip">LS Central</span><span class="chip">Web shop</span></div>
+        <a class="link-arrow" href="integracije.html">Sve integracije</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="head">
+        <span class="label">Uvođenje</span>
+        <h2>Od snimanja magacina do punog rada</h2>
+      </div>
+      <ol class="timeline">
+        <li><h3>Snimanje</h3><p>Analiziramo raspored magacina, tokove robe i postojeće procese.</p></li>
+        <li><h3>Podešavanje</h3><p>Definišemo lokacije i pravila skladištenja i povezujemo opremu.</p></li>
+        <li><h3>Obuka</h3><p>Obučavamo magacionere i rukovodioce za rad u sistemu.</p></li>
+        <li><h3>Podrška</h3><p>Pratimo rad, optimizujemo i razvijamo dodatne funkcije.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <div><h2>Uredimo vaš magacin</h2><p>Pošaljite nam osnovne podatke o magacinu i dobićete predlog rešenja.</p></div>
+        <div class="actions"><a class="btn light" href="kontakt.html?interes=Warehouse">Pošaljite upit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo.png" alt="RCL group" width="69" height="34">
+        <p>Poslovni informacioni sistemi za sve vrste poslovanja. Član RCL grupacije, sa više od 30 godina iskustva u razvoju i implementaciji.</p>
+      </div>
+      <div>
+        <h4>Rešenja</h4>
+        <ul>
+          <li><a href="erp.html">ERP: Dynamics 365 BC</a></li>
+          <li><a href="warehouse.html">Warehouse rešenje</a></li>
+          <li><a href="integracije.html">Integracije</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kompanija</h4>
+        <ul>
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="https://support-rcl.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener">Portal za podršku ↗</a></li>
+          <li><a href="https://www.linkedin.com/company/rcl-int-d-o-o-/about/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>RCL Nova d.o.o.</h4>
+        <ul>
+          <li>Pivljanina Baja 75a<br>11000 Beograd, Srbija</li>
+          <li><a href="tel:+381114024205">+381 11 402 4205</a></li>
+          <li><a href="mailto:info@rcl-group.com">info@rcl-group.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> RCL Nova d.o.o. Sva prava zadržana.</span>
+      <span>SRB · SLO · HR · MK</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

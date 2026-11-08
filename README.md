@@ -18,6 +18,12 @@ python -m http.server 8080
 ```
 Zatim otvorite http://localhost:8080
 
+## Objava
+Sajt se objavljuje na GitHub Pages (https://ivanrcl.github.io/rcl-nova-sajt/) automatski posle svakog `git push` na granu `main`.
+
+Kada menjate `css/style.css` ili `js/main.js`, u svim `.html` fajlovima povećajte oznaku verzije
+(`style.css?v=3` → `?v=4`, `main.js?v=3` → `?v=4`), da posetioci odmah dobiju novu verziju umesto keširane.
+
 ## Kontakt forma
 Forma šalje upite preko besplatnog servisa [Web3Forms](https://web3forms.com).
 Upiti stižu na email za koji je napravljen pristupni ključ (`ivan.gvozdenovic@rcl-group.com`).

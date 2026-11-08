@@ -1,7 +1,7 @@
 // Email na koji stižu upiti sa kontakt forme (prikazuje se korisniku ako slanje ne uspe)
 const CONTACT_EMAIL = "ivan.gvozdenovic@rcl-group.com";
 // Web3Forms pristupni ključ (https://web3forms.com) — vezan za CONTACT_EMAIL
-const WEB3FORMS_KEY = "OVDE_UNESITE_WEB3FORMS_KLJUC";
+const WEB3FORMS_KEY = "627ba814-3a00-462b-874d-f62c3aa93cf4";
 
 // Mobilni meni
 document.querySelector(".nav-toggle")?.addEventListener("click", (e) => {
